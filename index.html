@@ -5,6 +5,8 @@
 
     <meta charset="utf-8">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Avada Charity</title>
 
     <!-- Font Awesome Kit -->
@@ -24,6 +26,40 @@
   </head>
 
   <body>
+
+    <div id="root">
+
+      <header>
+
+        <section id="navbar">
+          <a onClick="window.location.reload()" href="">
+            <img src="img/avada-charity-logo.png" alt="<Avada Charity">
+          </a>
+          <nav>
+            <ul>
+              <template v-for="item in navbar">
+                <li v-if="item.type === 'navbarButton'">
+                  <button>
+                    {{item.name}}
+                  </button>
+                </li>
+                <li v-else>
+                  <a href="#" :class="{activeNavItem: (item.active == true)}">
+                    {{item.name}}
+                  </a>
+                </li>
+              </template>
+            </ul>
+          </nav>
+        </section>
+
+        <section id="jumbotron">
+
+        </section>
+
+      </header>
+
+    </div>
 
     <!-- Custom JS -->
     <script src="js/main.js" charset="utf-8"></script>

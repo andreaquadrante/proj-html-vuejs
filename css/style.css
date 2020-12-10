@@ -1,4 +1,59 @@
 * {
-  margin: 0; padding: 0; box-sizing: 0; /* resetting default CSS */
+  margin: 0; padding: 0; box-sizing: border-box; /* resetting default CSS */
   font-family: 'Montserrat', sans-serif;
 }
+
+body {
+  min-width: 1340px;
+  color: #fff;
+}
+
+header {
+  height: 685px;
+  background-image: url("../img/home-jumbotron.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+header > #navbar {
+  height: 100px;
+  padding: 0 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > #navbar > a > img {
+  height: 50px;
+}
+
+header > #navbar > nav > ul > li {
+  display: inline;
+  list-style-type: none;
+}
+
+
+header > #navbar > nav > ul > li > * {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header > #navbar > nav > ul > li > a.activeNavItem {
+  color: #fcd66c;
+}
+
+header > #navbar > nav > ul > li:not(:first-child) {
+  margin-left: 50px;
+}
+
+header > #navbar button {
+  background-color: #fcd66c;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
