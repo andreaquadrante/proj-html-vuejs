@@ -12,7 +12,7 @@ body {
 
 header {
   height: 685px;
-  background-image: url("../img/home-jumbotron.jpg");
+  background-image: url("../img/hero-bg.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -99,7 +99,7 @@ header {
 }
 
 #numbers {
-  height: 450px;
+  height: 500px;
   display: flex;
 }
 
@@ -114,7 +114,7 @@ header {
 
 #numbers > .numbersStats {
   width: calc(100% - 890px);
-  background-image: url("../img/numbers-background.jpg");
+  background-image: url("../img/numbers-bg.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -166,7 +166,7 @@ p {
 
 span {
   font-family: 'Raleway', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   letter-spacing: normal;
 }
 
@@ -179,5 +179,52 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+#values {
+  height: 600px;
+  background-image: url("../img/values-bg.jpg");
+  background-size: 150%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleRow {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rowItem {
+  max-width: 250px;
+  margin: 0 10px;;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rowItem > h3 {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.rowItem > p {
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+#values > .contentRow > .rowItem > i[class*="fa-"] {
+  color: #fcd66c;
 }
 
