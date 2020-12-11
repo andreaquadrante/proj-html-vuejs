@@ -430,7 +430,7 @@ span {
   align-items: center;
 }
 
-#credits > .footerNavbar > .socialButton > i[class*="fa-"] {
+#credits > .footerNavbar > .socialButton i[class*="fa-"] {
   color: #fcd66c;
   font-size: 1.2rem;
 }
