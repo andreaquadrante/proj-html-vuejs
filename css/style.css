@@ -37,9 +37,12 @@ header {
 
 #headerNavbar > nav > ul > li > * {
   color: #fff;
-  text-decoration: none;
   font-size: 0.6rem;
   text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
 }
 
 #headerNavbar > nav > ul > li > a.activeNavItem {
@@ -228,3 +231,32 @@ span {
   color: #fcd66c;
 }
 
+#causes {
+  height: 600px;
+}
+
+#causes > .container {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#causes .titleRow > h2,
+#causes .titleRow > span {
+  color: #353841;
+}
+
+#causes .contentRow > .rowItem > img {
+  width: 100%;
+}
+
+#causes .causesCta {
+  height: 100px;
+  width: 100%;
+  background: #ed6864;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
