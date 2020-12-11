@@ -399,10 +399,18 @@ span {
   align-items: center;
 }
 
-#credits > h6 {
-  font-size: 0.4rem;
+#credits span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.5rem;
   color: #bababc;
+  margin: 0 5px;
   margin-bottom: 20px;
+}
+
+#credits > .footerCredits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #credits > .footerNavbar {
