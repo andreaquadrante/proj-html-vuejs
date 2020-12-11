@@ -1,11 +1,13 @@
 * {
   margin: 0; padding: 0; box-sizing: border-box; /* resetting default CSS */
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
 }
 
 body {
   min-width: 1340px;
-  color: #fff;
 }
 
 header {
@@ -15,7 +17,7 @@ header {
   background-position: center;
 }
 
-header > #navbar {
+#headerNavbar {
   height: 100px;
   padding: 0 70px;
   display: flex;
@@ -23,37 +25,159 @@ header > #navbar {
   align-items: center;
 }
 
-header > #navbar > a > img {
+#headerNavbar > a > img {
   height: 50px;
 }
 
-header > #navbar > nav > ul > li {
+#headerNavbar > nav > ul > li {
   display: inline;
   list-style-type: none;
 }
 
 
-header > #navbar > nav > ul > li > * {
+#headerNavbar > nav > ul > li > * {
   color: #fff;
   text-decoration: none;
   font-size: 0.6rem;
-  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
-header > #navbar > nav > ul > li > a.activeNavItem {
+#headerNavbar > nav > ul > li > a.activeNavItem {
   color: #fcd66c;
 }
 
-header > #navbar > nav > ul > li:not(:first-child) {
+#headerNavbar > nav > ul > li:not(:first-child) {
   margin-left: 50px;
 }
 
-header > #navbar button {
-  background-color: #fcd66c;
+.fullCta {
+  background: #fcd66c;
+  font-size: 0.6rem;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+}
+
+#hero {
+  height: 485px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero > .heroCopy {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#hero > .heroCopy > h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#hero > .heroCopy > h3 {
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
+#hero > .heroCta > button {
+  margin: 0 5px;
+}
+
+.emptyCta {
+  background: none;
+  font-size: 0.6rem;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.highlightCta {
+  color: #fcd66c;
+  border-color: #fcd66c;;
+}
+
+#numbers {
+  height: 450px;
+  display: flex;
+}
+
+#numbers > .numbersCopy {
+  width: 890px;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#numbers > .numbersStats {
+  width: calc(100% - 890px);
+  background-image: url("../img/numbers-background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#numbers > .numbersCopy > .container,
+#numbers > .numbersStats > .container {
+  height: 300px;
+}
+
+#numbers > .numbersCopy h2,
+#numbers > .numbersCopy p {
+  color: #353841;
+}
+
+.divisor {
+  background: #fcd66c;
+  width: 135px;
+  height: 2px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.7rem;
+  margin: 20px 0;
+  letter-spacing: normal;
+  line-height: 1.5rem;
+}
+
+#numbers > .numbersCopy .copyContainer {
+  margin-bottom: 20px
+} 
+
+#numbers > .numbersStats .stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#numbers > .numbersStats .stat > .statCounter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: normal;
+}
+
+#numbers > .numbersStats .stat > .statCounter > span {
+  margin: 0 5px;
+  font-size: 3rem;
+}
+
+#numbers > .numbersStats > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 

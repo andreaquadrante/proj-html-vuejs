@@ -15,9 +15,13 @@
     <!-- VueJS -->
     <script src="libs/vue.js" charset="utf-8"></script>
 
-    <!-- "Google Fonts" Font Embed -->
+    <!-- Google Fonts -->
+    <!-- Montserrat -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Raleway -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -27,19 +31,19 @@
 
   <body>
 
-    <div id="root">
+    <wrapper id="root">
 
       <header>
 
-        <section id="navbar">
+        <section id="headerNavbar">
           <a onClick="window.location.reload()" href="">
             <img src="img/avada-charity-logo.png" alt="<Avada Charity">
           </a>
           <nav>
             <ul>
-              <template v-for="item in navbar">
-                <li v-if="item.type === 'navbarButton'">
-                  <button>
+              <template v-for="item in headerMenu">
+                <li v-if="item.type === 'navbarCta'">
+                  <button class="fullCta">
                     {{item.name}}
                   </button>
                 </li>
@@ -53,13 +57,64 @@
           </nav>
         </section>
 
-        <section id="jumbotron">
-
+        <section id="hero">
+          <div class="heroCopy">
+            <h1>MAKE A DIFFERENCE</h1>
+            <h3>As long as poverty, injustice & inequality persist, none of us can truly rest</h3>
+          </div>
+          <div class="heroCta">
+            <button class="emptyCta">OUR MISSION</button>
+            <button class="emptyCta highlightCta">DONATE NOW</button>
+          </div>
         </section>
 
       </header>
 
-    </div>
+      <main>
+
+        <section id="numbers">
+          <div class="numbersCopy"> 
+            <div class="container">
+              <h2>EVERY MOMENT COUNTS</h2>
+              <div class="divisor"></div>
+              <div class="copyContainer">
+                <p>Curabitur non mi et turpis pharetra vulputate. Cras consequat, risus nec commodo vehicula, nisi est laoreet leo, ac convallis nisi nibh id velit. Aliquam mattis metus a nisi pretium.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac nibh vestibulum, laoreet ipsum quis, vestibulum nisi. Curabitur non mi et turpis pharetra vulputate. Ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac nibh vestibulum, laoreet ipsum quis, vestibulum nisi.</p>
+                <p>Curabitur non mi et turpis pharetra vulputate. Cras consequat, risus nec commodo vehicula, nisi est laoreet leo, ac convallis nisi nibh id velit.</p>
+              </div>
+              <button class="fullCta">OUR MISSION</button>
+            </div>
+          </div>
+          <div class="numbersStats">
+            <div class="container">
+              <div class="stat">
+                <div class="statCounter">
+                  <i class="far fa-heart fa-2x"></i>
+                  <span>2032</span>
+                </div>
+                <span>Volunteers worldwide</span>
+              </div>
+              <div class="stat">
+                <div class="statCounter">
+                  <i class="fas fa-globe fa-2x"></i>
+                  <span>132</span>
+                </div>
+                <span>Active projects</span>
+              </div>
+              <div class="stat">
+                <div class="statCounter">
+                  <i class="fas fa-dollar-sign fa-2x"></i>
+                  <span>3.8M</span>
+                </div>
+                <span>Donated</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+    </wrapper>
 
     <!-- Custom JS -->
     <script src="js/main.js" charset="utf-8"></script>

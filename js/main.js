@@ -4,7 +4,8 @@ const app = new Vue ({
 
     data: {
 
-        navbar: [
+        headerMenu: 
+        [
             {
                 name: 'home',
                 type: 'navbarItem',
@@ -27,8 +28,32 @@ const app = new Vue ({
             },
             {
                 name: 'donate',
-                type: 'navbarButton',
+                type: 'navbarCta',
                 active: 0
+            }
+        ],
+
+        footerMenu: 
+        [
+            {
+                name: 'facebook',
+                logo: '<i class="fab fa-facebook-f"></i>',
+                type: 'navbarSocial'
+            },
+            {
+                name: 'instagran',
+                logo: '<i class="fab fa-instagram"></i>',
+                type: 'navbarSocial'
+            },
+            {
+                name: 'twitter',
+                logo: '<i class="fab fa-twitter"></i>',
+                type: 'navbarSocial'
+            },
+            {
+                name: 'youtube',
+                logo: '<i class="fab fa-youtube"></i>',
+                type: 'navbarSocial'
             }
         ]
 
