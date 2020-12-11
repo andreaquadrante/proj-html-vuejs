@@ -31,13 +31,13 @@
 
   <body>
 
-    <wrapper id="root">
+    <div id="root">
 
       <header>
 
         <section id="headerNavbar">
           <a onClick="window.location.reload()" href="">
-            <img src="img/avada-charity-logo.png" alt="<Avada Charity">
+            <img src="img/avada-charity-mono-logo.png" alt="<Avada Charity">
           </a>
           <nav>
             <ul>
@@ -62,7 +62,7 @@
             <h1>MAKE A DIFFERENCE</h1>
             <h3>As long as poverty, injustice & inequality persist, none of us can truly rest</h3>
           </div>
-          <div class="heroCta">
+          <div class="ctaButtons">
             <button class="emptyCta">OUR MISSION</button>
             <button class="emptyCta highlightCta">DONATE NOW</button>
           </div>
@@ -231,12 +231,41 @@
           <div class="articlesCta">
             <a href="#"><h5>VIEW ALL OUR ARTICLES</h5></a>
           </div>
-        </div>
+
         </section>
 
       </main>
 
-    </wrapper>
+      <footer>
+
+        <section id="footerCta">
+          <div class="titleRow">
+            <h2>CHANGE A LIFE TODAY</h2>
+            <div class="divisor"></div>
+            <span>As long as poverty, injustice & inequality persist, none of us can truly rest. It doesn’t take much to change a life, Get in touch today and start making the difference.</span>
+          </div>
+          <div class="ctaButtons">
+            <button class="emptyCta">VOLUNTEER</button>
+            <button class="emptyCta">DONATE NOW</button>
+          </div>
+        </section>
+
+        <section id="footerLogo">
+          <a href="#"><img src="img/avada-charity-logo.png" alt="<Avada Charity"></a>
+        </section>
+
+        <section id="credits">
+          <h6>&copy; Copyright 2012 2020 AVADA THEME BY THEME FUSION | ALL RIGHT RESERVED | POWERED BY WORDPRESS</h6>
+          <div class="footerNavbar">
+            <div class="socialButton" v-for="social in footerMenu">
+              <i :class="social.logo"></i>
+            </div>
+          </div>
+        </section>
+
+      </footer>
+
+    </div>
 
     <!-- Custom JS -->
     <script src="js/main.js" charset="utf-8"></script>

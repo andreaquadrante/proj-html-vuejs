@@ -37,22 +37,22 @@ const app = new Vue ({
         [
             {
                 name: 'facebook',
-                logo: '<i class="fab fa-facebook-f"></i>',
+                logo: 'fab fa-facebook-f',
                 type: 'navbarSocial'
             },
             {
-                name: 'instagran',
-                logo: '<i class="fab fa-instagram"></i>',
+                name: 'instagra',
+                logo: 'fab fa-instagram',
                 type: 'navbarSocial'
             },
             {
                 name: 'twitter',
-                logo: '<i class="fab fa-twitter"></i>',
+                logo: 'fab fa-twitter',
                 type: 'navbarSocial'
             },
             {
                 name: 'youtube',
-                logo: '<i class="fab fa-youtube"></i>',
+                logo: 'fab fa-youtube',
                 type: 'navbarSocial'
             }
         ]
